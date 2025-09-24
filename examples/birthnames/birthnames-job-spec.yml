@@ -1,0 +1,24 @@
+executionFrameworkSpec:
+  name: 'standalone'
+  segmentGenerationJobRunnerClassName: 'org.apache.pinot.plugin.ingestion.batch.standalone.SegmentGenerationJobRunner'
+  segmentTarPushJobRunnerClassName: 'org.apache.pinot.plugin.ingestion.batch.standalone.SegmentTarPushJobRunner'
+  segmentUriPushJobRunnerClassName: 'org.apache.pinot.plugin.ingestion.batch.standalone.SegmentUriPushJobRunner'
+jobType: SegmentCreationAndTarPush
+inputDirURI: '/opt/pinot/examples/birthnames/rawdata/'
+includeFileNamePattern: 'glob:**/*.json'
+outputDirURI: '/tmp/pinot-birthnames-analytics/segments/'
+overwriteOutput: true
+pinotFSSpecs:
+  - scheme: file
+    className: org.apache.pinot.spi.filesystem.LocalPinotFS
+recordReaderSpec:
+  dataFormat: 'json'
+  className: 'org.apache.pinot.plugin.inputformat.json.JSONRecordReader'
+tableSpec:
+  tableName: birth_names
+  schemaURI: 'http://localhost:9000/tables/birth_names/schema'
+  tableConfigURI: 'http://localhost:9000/tables/birth_names'
+pinotClusterSpecs:
+  - controllerURI: 'http://localhost:9000'
+pushJobSpec:
+  pushFileNamePattern: 'glob:**/*.tar.gz'

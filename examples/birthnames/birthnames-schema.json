@@ -1,0 +1,40 @@
+{
+  "schemaName": "birth_names",
+  "dimensionFieldSpecs": [
+    {
+      "name": "gender",
+      "dataType": "STRING"
+    },
+    {
+      "name": "name",
+      "dataType": "STRING"
+    },
+    {
+      "name": "state",
+      "dataType": "STRING"
+    }
+  ],
+  "metricFieldSpecs": [
+    {
+      "name": "num",
+      "dataType": "INT"
+    },
+    {
+      "name": "num_boys",
+      "dataType": "INT"
+    },
+    {
+      "name": "num_girls",
+      "dataType": "INT"
+    }
+  ],
+  "dateTimeFieldSpecs": [
+    {
+      "name": "ds1",
+      "dataType": "TIMESTAMP",
+      "format": "TIMESTAMP",
+      "granularity": "1:MILLISECONDS"
+    }
+
+  ]
+}
