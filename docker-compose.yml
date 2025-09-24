@@ -19,13 +19,6 @@
 x-superset-image: &superset-image apache/superset:${SUPERSET_VERSION}
 x-pinot-image: &pinot-image apachepinot/pinot:${PINOT_VERSION}
 
-x-superset-depends-on: &superset-depends-on
-  - db
-  - redis
-x-pinot-depends-on: &pinot-depends-on
-  - db
-  - redis
-  - superset
 
 x-superset-volumes: &superset-volumes # /app/pythonpath_docker will be appended to the PYTHONPATH in the final container
   - ./docker:/app/docker
@@ -130,7 +123,6 @@ services:
     ports:
       - 8000:8000
       - 9000:9000
-    depends_on: *pinot-depends-on
     volumes: *pinot-volumes
     
 volumes:
