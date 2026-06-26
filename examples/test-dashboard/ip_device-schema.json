@@ -1,0 +1,296 @@
+{
+  "schemaName": "ip_device",
+  "enableColumnBasedNullHandling": true,
+  "dimensionFieldSpecs": [
+    {
+      "name": "__key",
+      "dataType": "STRING",
+      "notNull": false
+    },
+    {
+      "name": "__metadata$partition",
+      "dataType": "INT",
+      "notNull": false
+    },
+    {
+      "name": "__metadata$offset",
+      "dataType": "LONG",
+      "notNull": false
+    },
+    {
+      "name": "__metadata$recordTimestamp",
+      "dataType": "LONG",
+      "notNull": false
+    },
+    {
+      "name": "sourceID",
+      "dataType": "STRING",
+      "notNull": false
+    },
+    {
+      "name": "deviceID",
+      "dataType": "STRING",
+      "notNull": false
+    },
+    {
+      "name": "deviceName",
+      "dataType": "STRING",
+      "notNull": true
+    },
+    {
+      "name": "deviceType",
+      "dataType": "STRING",
+      "notNull": false
+    },
+    {
+      "name": "deviceModel",
+      "dataType": "STRING",
+      "notNull": false
+    },
+    {
+      "name": "enKey",
+      "dataType": "STRING",
+      "notNull": false
+    },
+    {
+      "name": "objectID",
+      "dataType": "STRING",
+      "notNull": false
+    },
+    {
+      "name": "granularity",
+      "dataType": "INT",
+      "notNull": true
+    },
+    {
+      "name": "objectName",
+      "dataType": "STRING",
+      "notNull": true
+    },
+    {
+      "name": "objectType",
+      "dataType": "STRING",
+      "notNull": true
+    },
+    {
+      "name": "objectClass",
+      "dataType": "STRING",
+      "notNull": false
+    },
+    {
+      "name": "originalMetricName",
+      "dataType": "STRING",
+      "notNull": false
+    },
+    {
+      "name": "originalMetricGroup",
+      "dataType": "STRING",
+      "notNull": false
+    },
+    {
+      "name": "metricGroup",
+      "dataType": "STRING",
+      "notNull": true
+    },
+    {
+      "name": "metricName",
+      "dataType": "STRING",
+      "notNull": true
+    },
+    {
+      "name": "metricUnit",
+      "dataType": "STRING",
+      "notNull": true
+    },
+    {
+      "name": "aggregation",
+      "dataType": "BOOLEAN",
+      "notNull": true
+    },
+    {
+      "name": "rule",
+      "dataType": "STRING",
+      "notNull": false
+    },
+    {
+      "name": "domain",
+      "dataType": "STRING",
+      "notNull": false
+    },
+    {
+      "name": "technology",
+      "dataType": "STRING",
+      "notNull": false
+    },
+    {
+      "name": "vendor",
+      "dataType": "STRING",
+      "notNull": false
+    },
+    {
+      "name": "location1",
+      "dataType": "STRING",
+      "notNull": false
+    },
+    {
+      "name": "location2",
+      "dataType": "STRING",
+      "notNull": false
+    },
+    {
+      "name": "location3",
+      "dataType": "STRING",
+      "notNull": false
+    },
+    {
+      "name": "location4",
+      "dataType": "STRING",
+      "notNull": false
+    },
+    {
+      "name": "location5",
+      "dataType": "STRING",
+      "notNull": false
+    },
+    {
+      "name": "latitude",
+      "dataType": "DOUBLE",
+      "notNull": false
+    },
+    {
+      "name": "longitude",
+      "dataType": "DOUBLE",
+      "notNull": false
+    },
+    {
+      "name": "UDA01",
+      "dataType": "STRING",
+      "notNull": false
+    },
+    {
+      "name": "UDA02",
+      "dataType": "STRING",
+      "notNull": false
+    },
+    {
+      "name": "UDA03",
+      "dataType": "STRING",
+      "notNull": false
+    },
+    {
+      "name": "UDA04",
+      "dataType": "STRING",
+      "notNull": false
+    },
+    {
+      "name": "UDA05",
+      "dataType": "STRING",
+      "notNull": false
+    },
+    {
+      "name": "UDA06",
+      "dataType": "STRING",
+      "notNull": false
+    },
+    {
+      "name": "UDA07",
+      "dataType": "STRING",
+      "notNull": false
+    },
+    {
+      "name": "UDA08",
+      "dataType": "STRING",
+      "notNull": false
+    },
+    {
+      "name": "UDA09",
+      "dataType": "STRING",
+      "notNull": false
+    },
+    {
+      "name": "UDA10",
+      "dataType": "STRING",
+      "notNull": false
+    },
+    {
+      "name": "UDA11",
+      "dataType": "STRING",
+      "notNull": false
+    },
+    {
+      "name": "UDA12",
+      "dataType": "STRING",
+      "notNull": false
+    },
+    {
+      "name": "UDA13",
+      "dataType": "STRING",
+      "notNull": false
+    },
+    {
+      "name": "UDA14",
+      "dataType": "STRING",
+      "notNull": false
+    },
+    {
+      "name": "UDA15",
+      "dataType": "STRING",
+      "notNull": false
+    },
+    {
+      "name": "UDA16",
+      "dataType": "STRING",
+      "notNull": false
+    },
+    {
+      "name": "UDA17",
+      "dataType": "STRING",
+      "notNull": false
+    },
+    {
+      "name": "UDA18",
+      "dataType": "STRING",
+      "notNull": false
+    },
+    {
+      "name": "UDA19",
+      "dataType": "STRING",
+      "notNull": false
+    },
+    {
+      "name": "UDA20",
+      "dataType": "STRING",
+      "notNull": false
+    }
+  ],
+  "metricFieldSpecs": [
+    {
+      "name": "metricValue",
+      "dataType": "DOUBLE",
+      "notNull": true
+    }
+  ],
+  "dateTimeFieldSpecs": [
+    {
+      "name": "ts",
+      "dataType": "LONG",
+      "notNull": false,
+      "format": "EPOCH|MILLISECONDS|1",
+      "granularity": "1:HOURS"
+    },
+    {
+      "name": "collectionTimestamp",
+      "dataType": "LONG",
+      "notNull": false,
+      "format": "EPOCH|MILLISECONDS|1",
+      "granularity": "1:HOURS"
+    },
+    {
+      "name": "creationTs",
+      "dataType": "LONG",
+      "notNull": false,
+      "format": "EPOCH|MILLISECONDS|1",
+      "granularity": "1:MILLISECONDS"
+    }
+  ]
+}
